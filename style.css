@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+:root{
+	/* *colors */
+	--clr-Intro-Mail_bg:hsl(217, 28%, 15%);
+	--clr-main_bg:hsl(218, 28%, 13%);
+	--clr-footer_bg:hsl(218, 28%, 13%);
+	--clr-testimonials_bg: hsl(219, 30%, 18%);
+	--clr-light-red:hsl(0, 100%, 63%);
+	--clr-blue:hsl(198, 60%, 50%);
+	--clr-green:hsl(176, 68%, 64%);
+	--clr-white: hsl(0, 0%, 100%);
+	/* *fonts */
+	--ff-Raleway:'Raleway', sans-serif;
+	--ff-Open_Sans:'Open Sans', sans-serif;
+
+
+}
+
+
+*,*::after,*::before{
+	box-sizing: border-box;
+}
+body{
+	margin:0;
+	font-size: clamp(14px, 3vw, 20px);
+	font-family: var(--ff-Open_Sans);
+	font-weight: 400;
+	color:var(--clr-white);
+	background: url(./images/bg-curvy-desktop.svg) no-repeat ,linear-gradient(var(--clr-Intro-Mail_bg) 9%,var(--clr-main_bg) 9%);
+	background-size: contain;
+	background-position-y: 6.5%,0;
+}
+main{
+	margin: 1.5rem;
+}
+h1{
+	font-family: var(--ff-Raleway);
+}
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 3rem;
+	margin-inline: 1.5rem;
+}
+
+nav ul{
+	list-style: none;
+	display: flex;
+	gap: 4vw;
+}
+img{
+	max-width: 100%;
+}
+.logoHeader{
+	width:25vw;
+	max-width: 10rem;
+	min-width: 6rem;
+	align-self: center;
+}
+.Footer_SocialMedia_Facebook, .Footer_SocialMedia_Instagram, .Footer_SocialMedia_Twitter{
+	width: 7vw;
+	height: 7vw;
+	max-width:3rem ;
+	max-height:3rem ;
+	min-width: 1.7rem;
+	min-height: 1.7rem;
+	border: 2px solid var(--clr-white);
+	border-radius: 50%;
+	margin-inline: 3px;
+	background-color: var(--clr-white);
+}
+.Footer_SocialMedia{
+	display: flex;
+	justify-content: center;
+}
+.Intro,.Features{
+	text-align: center;
+
+}
+.Intro_Buttom,.Product_Review_Buttom{
+	background:linear-gradient(to right,var(--clr-green) ,var(--clr-blue));
+	border-radius: 50px;
+	height: 12vw;
+	width: 55vw;
+	max-width: 250px;
+	max-height:76px ;
+	font-weight: 700;
+	color: var(--clr-white);
+}
+.Intro_Buttom{
+	margin-bottom: 6rem;
+}
+.Features_Access,.Features_Security,.features_collaboration,.Features_FileSave{
+	margin-bottom: 5rem;
+}
+
+
+.Product_Intro_Description_Buttom{
+	color: var(--clr-green);
+	font-size: clamp(15px, 3vw, 28px);
+	font-weight: 700;
+	background: transparent;
+	border:transparent;
+	position: relative;
+	margin-bottom: 6em;
+	
+}
+.Product_Intro_Description_Buttom::after{
+	content: "";
+	width: 28vw;
+	min-width: 150px;
+	max-width: 270px;
+	height: 5px;
+	background:var(--clr-green);
+	position: absolute;
+	top:98%;
+	left:2%;
+}
+.Product_Intro_Description_ArrowIcon{
+	width: 5vw;
+	height: 5vw;
+	transform: translateY(1.2vw);
+	max-height:55px ;
+	max-width:55px ;
+
+}
+.Product_Review_Marwen,.Product_Review_Farouk,.Product_Review_Mariem{
+	background-color:var(--clr-Intro-Mail_bg);
+	border-radius: 20px;
+	padding: 16px;
+	margin-top: 3em;
+	
+}
+
+.Product_Review_Marwen_photo,.Product_Review_Farouk_photo,.Product_Review_Mariem_photo{
+	width:15vw ;
+	height:15vw ;
+	min-width: 50px;
+	max-width: 80px;
+	min-height: 50px;
+	max-height: 80px;
+	border-radius: 50%;
+	
+}
+.Product_Review_Flex{
+	display: flex;
+	gap:1.2rem;
+	line-height: 0.5px;
+}
+
+.Product_Access{
+	background-color:var(--clr-Intro-Mail_bg);
+	border-radius: 20px;
+	padding: 20px;
+	margin-bottom: 5rem;
+	position: relative;
+	top: 15rem;
+}
+.Product_Review_MailInput{
+	border-radius: 30px;
+	border: transparent;
+	border-radius: 50px;
+	height: 12vw;
+	width: 55vw;
+	/* ?max-width: 382px; */
+	max-height:76px ;
+	
+	margin-bottom: 1.2rem;
+	margin-left: 10%;
+	
+}
+.Product_Review_Buttom{
+	margin-left: 10%;
+}
+
+footer{
+	background-color: var(--clr-footer_bg);
+	padding-top: 18rem;
+	
+}
+.inline-Personal-info{
+	display: flex;
+	gap:2rem;
+}
+
+.Footer_PersonalInfo,.Footer_JobInfo1,.Footer_JobInfo2{
+	margin-bottom: 3rem;
+}
+.logoFooter{
+	margin-bottom: 2rem;
+}
+.Footer_SocialMedia{
+	padding-bottom: 50px;
+}
+.Footer,.logoFooter{
+	margin-left: 25px;
+}
+
+.Footer_JobInfo2_IconLocal,.Footer_JobInfo2_IconPhone,.Footer_JobInfo2_IconMail{
+	height: 4vw;
+	width: 4vw;
+	align-self: center;
+	max-width: 25px;
+	max-height: 25px;
+}
+
+/* *iPad Pro layout */
+
+@media (min-width:1024px){
+	body{
+	background: url(./images/bg-curvy-desktop.svg) no-repeat ,linear-gradient(var(--clr-Intro-Mail_bg) 12%,var(--clr-main_bg) 12%);
+	background-size: contain;
+	background-position-y: 6.5%,0;
+	}
+}
+
+/* *desktop layout */
+@media (min-width:1440px) {
+	body{
+        background: url(./images/bg-curvy-desktop.svg) no-repeat ,linear-gradient(var(--clr-Intro-Mail_bg) 28%,var(--clr-main_bg) 28%);
+	background-size: contain;
+	background-position-y: 18%,0;
+	}
+	.Features{
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+	}
+	.Product_Intro{
+		display: flex;
+		gap:2rem;
+	}
+	.Product-cards{
+		display: flex;
+		gap:2rem;
+	}
+	.Footer{
+		display: grid;
+		grid-template-columns: repeat(4,1fr);
+	}
+	.Footer_PersonalInfo{
+		display: flex;
+		padding-right: 11rem;
+		gap:4rem;
+	}
+	.Footer_JobInfo2_IconLocal{
+		align-self: flex-start;
+	}
+	.break_space::after{
+		content: "";
+		display: block;
+	}
+	.Product_Access{
+		text-align: center;
+	}
+	.Footer_JobInfo2_IconLocal{
+		position: relative;
+		left:20%;
+		top:8%;
+	}
+}
+
+
+/* *css animation */
+
+nav ul li:hover,.Intro_Buttom:hover,.Product_Review_Buttom:hover,.Footer_JobInfo1 p:hover,.Footer_JobInfo2 p:hover{
+	cursor: pointer;
+	text-decoration: underline;
+	filter: brightness(150%);
+}
+
+.Product_Intro_Description_Buttom:hover{
+	cursor: pointer;
+	filter: brightness(150%);
+}
+.Product_Intro_Description_Buttom:hover::after{
+	background-color: var(--clr-white);
+}
+@media (min-width:1440px) {
+.Product_Intro_Description_Buttom:hover+.Product_Intro_Description_ArrowIcon{
+	filter: brightness(150%);
+	animation: animate-row 3s ease-in  2 both ;
+}
+}
+@keyframes animate-row{
+        0%{
+                transform: translate(1px,20px);
+        }
+        50%{
+                transform: translate(30px,20px);
+        }
+        100%{
+                transform: translate(-5px,20px);
+        }
+}
+
+.Footer_SocialMedia_Facebook:hover, .Footer_SocialMedia_Instagram:hover, .Footer_SocialMedia_Twitter:hover{
+	background-color: var(--clr-green);
+	border:solid 1px var(--clr-green)
+}
+
+
+/* *Input mail validate */
+input[type="email"] {
+        font-size:25px;
+}
+input[type="email"]:valid:focus {
+	border: solid 5px green;
+}
+input[type="email"]:invalid:focus {
+	border: solid 5px red;
+}
