@@ -11,24 +11,28 @@
 
 <body>
 	<header>
-		<img src="./images/logo.svg" alt="logo icon" class="logoHeader">
-		<nav>
-			<ul>
-				<li>Features</li>
-				<li>Team</li>
-				<li>Sign In</li>
-			</ul>
-		</nav>
+		<div class="header">
+			<img src="./images/logo.svg" alt="logo icon" class="logoHeader">
+			<nav>
+				<ul>
+					<li>Features</li>
+					<li>Team</li>
+					<li>Sign In</li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 
 
 	<main>
 		<section class="Intro">
 			<img class="Intro_Img" src="./images/illustration-intro.png" alt="illustration into">
-			<h1 class="Intro_Title">All your files in one secure location,accessible anywhere.</h1>
+			<h1 class="Intro_Title">All your files in one secure location<span
+					class="break_space">,</span>accessible anywhere.</h1>
 			<p class="Intro_Paragraph">Fylo stores all your most important files in one secure
-				location.Access them wherever you
-				need,share and collaborate with friends family,and co-workers.</p>
+				location<span class="break_space">.</span>Access them wherever you
+				need,share and collaborate <span class="break_space">with</span> friends family,and
+				co-workers.</p>
 			<button class="Intro_Buttom Intro_buttom-color" type="submit">Get Started</button>
 		</section>
 		<section class="Features">
@@ -36,31 +40,36 @@
 				<img class="Features_Access_img" src="./images/icon-access-anywhere.svg"
 					alt="icon-access-anywhere">
 				<h1 class="Features_Access_Title">Access your files,anywhere</h1>
-				<p class="Features_Access_Paragraph">The ability to use a smartphone,tablet,or computer
+				<p class="Features_Access_Paragraph">The ability to use a smartphone,tablet,or <span
+						class="break_space">computer</span>
 					to access your account means your
-					files follow you everywhere.</p>
+					files follow <span class="break_space">you</span> everywhere.</p>
 			</section>
 			<section class="Features_Security">
 				<img class="Features_Security_img" src="./images/icon-security.svg" alt="icon-security">
 				<h1 class="Features_Security_Title">Security you can trust</h1>
 				<p class="Features_Security_Paragraph">2-factor authentication and user-controlled
-					encryption are just a couple of securuty
-					fratures we allow to help secure your files.</p>
+					encryption <span class="break_space">are</span> just a couple of securuty
+					fratures we allow to <span class="break_space">help</span> secure your files.
+				</p>
 			</section>
 			<section class="features_collaboration">
-				<img class="Features_Security_img" src="./images/icon-collaboration.svg"
+				<img class="Features_collaboration_img" src="./images/icon-collaboration.svg"
 					alt="icon-collaboration">
 				<h1 class="Features_Security_Title">Real-time collaboration</h1>
 				<p class="Features_Security_paragraph">Securely share files and folders with
-					friends,family and colleagues for live
-					collaboration.Mo email attachements required.</p>
+					friends,family <span class="break_space">and</span> colleagues for live
+					collaboration.Mo email <span class="break_space">attachements</span> required.
+				</p>
 			</section>
 			<section class="Features_FileSave">
 				<img class="Features_FileSave_img" src="./images/icon-any-file.svg" alt="icon-any-file">
 				<h1 class="Features_FileSave_Title">Store any type of file </h1>
-				<p class="Features_FileSave_Paragraph">Whether you-re sharing holidays photos or work
+				<p class="Features_FileSave_Paragraph">Whether you-re sharing holidays photos or<span
+						class="break_space"> work</span>
 					documents,Fylo has you covered
-					allowing for all file types to be securely stored and shared.</p>
+					allowing for all <span class="break_space">file</span> types to be securely
+					stored and shared.</p>
 			</section>
 		</section class="Product">
 		<section class="Product_Intro">
@@ -69,10 +78,11 @@
 			<article class="Product_Intro_Description">
 				<h1 class="Product_Intro_Description_Title">Stay productive.wherever you are</h1>
 				<p class="Product_Intro_Description_Paragraph1">Never let location be an issue when
-					accessing your files.Fylo has you covered for all
+					accessing your files.Fylo has <span class="break_space">you</span> covered for
+					all
 					of your file storage needs.</p>
 				<p class="Product_Intro_Description_Paragraph2">Securely share files and folders with
-					friends,family and colleagues for live
+					friends,family and colleagues for <span class="break_space">live</span>
 					collaboration,No email attachements required.</p>
 				<button class="Product_Intro_Description_Buttom" type="submit">See how Fylo
 					works</button>
@@ -81,42 +91,56 @@
 			</article>
 		</section>
 		<section class="Product_Review">
-			<section>
+			<section class="Product-cards">
 				<article class="Product_Review_Marwen">
 					<p class="Product_Review_Marwen_Rv">Fylo has improved our tram productivity by
 						an order of magnitude.Since making
 						the switch our team has become a well-oiled collaboration machine.</p>
-					<img class="Product_Review_Marwen_photo" src="./images/profile-1.jpg"
-						alt="profilel-1-image">
-					<h2 class="Product_Review_Marwen_Name">Marwen Labidi</h2c>
-						<p class="Product_Review_Marwen_Post">Founder & CEO,Huddle</p>
+					<div class="Product_Review_Flex">
+						<img class="Product_Review_Marwen_photo" src="./images/profile-1.jpg"
+							alt="profile-1-image">
+						<div>
+							<h4 class="Product_Review_Marwen_Name">Marwen Labidi</h4>
+							<p class="Product_Review_Marwen_Post">Founder & CEO,Huddle</p>
+						</div>
+					</div>
 				</article>
 				<article class="Product_Review_Farouk">
 					<p class="Product_Review_Farouk_Rv">Fylo has improved our tram productivity by
 						an order of magnitude.Since making
 						the switch our team has become a well-oiled collaboration machine.</p>
-					<img class="Product_Review_Farouk_photo" src="./images/profile-2.jpg"
-						alt="profile-2-image">
-					<h2 class="Product_Review_Farouk_Name">Wardi Farouk</h2>
-					<p class="Product_Review_Farouk_Post">Founder & CEO,Huddle</p>
+					<div class="Product_Review_Flex">
+						<img class="Product_Review_Farouk_photo" src="./images/profile-2.jpg"
+							alt="profile-2-image">
+						<div>
+							<h4 class="Product_Review_Farouk_Name">Wardi Farouk</h4>
+							<p class="Product_Review_Farouk_Post">Founder & CEO,Huddle</p>
+						</div>
+					</div>
 				</article>
 				<article class="Product_Review_Mariem">
 					<p class="Product_Review_Mariem_Rv">Fylo has improved our tram productivity by
 						an order of magnitude.Since making
 						the switch our team has become a well-oiled collaboration machine.</p>
-					<img class="Product_Review_Mariem_photo" src="./images/profile-3.jpg"
-						alt="profile-3-image">
-					<h2 class="Product_Review_Mariem_Name">Mariem Zlitni</h2>
-					<p class="Product_Review_Mariem_Post">Founder & CEO,Huddle</p>
+					<div class="Product_Review_Flex">
+						<img class="Product_Review_Mariem_photo" src="./images/profile-3.jpg"
+							alt="profile-3-image">
+						<div>
+							<h4 class="Product_Review_Mariem_Name">Mariem Zlitni</h4>
+							<p class="Product_Review_Mariem_Post">Founder & CEO,Huddle</p>
+						</div>
+					</div>
 				</article>
 			</section>
 			<section class="Product_Access">
 				<h1 class="Product_Access_Title">Get early access today </h1>
 				<p class="Product_Access_description">it only takes aminute to sign up and our free
 					starter tier is extremely generous.if
-					you have any questions,our support tram would be happy to help you.</p>
+					you have <span class="break_space">any</span> questions,our support tram would
+					be happy to help you.</p>
 				<input class="Product_Review_MailInput" type="email" name="mail-input"
-					placeholder="email@example.com" required>
+					placeholder="email@example.com"
+					pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
 				<button class="Product_Review_Buttom" type="submit">Get Started For Free</button>
 			</section>
 		</section>
@@ -128,13 +152,23 @@
 		<img src="./images/logo.svg" alt="logo" class="logoFooter">
 		<section class="Footer">
 			<section class="Footer_PersonalInfo">
-				<img class="Footer_JobInfo2_IconLocal" src="./images/icon-location.svg"
-					alt="location-icon">
-				<p class="Footer_JobInfo2_local">Ariana Tunis</p>
-				<img class="Footer_JobInfo2_IconPhone" src="./images/icon-phone.svg" alt="phone-icon">
-				<p class="Footer_JobInfo2_Phone">+216-23432113</p>
-				<img class="Footer_JobInfo2_IconMail" src="./images/icon-email.svg" alt="email-icon">
-				<p class="Footer_JobInfo2_Mail">labidimarwen6@gmail.com</p>
+				<div class="inline-Personal-info">
+					<img class="Footer_JobInfo2_IconLocal" src="./images/icon-location.svg"
+						alt="location-icon">
+					<p class="Footer_JobInfo2_local">Tunis</p>
+				</div>
+				<div>
+					<div class="inline-Personal-info">
+						<img class="Footer_JobInfo2_IconPhone" src="./images/icon-phone.svg"
+							alt="phone-icon">
+						<p class="Footer_JobInfo2_Phone">+216-23432113</p>
+					</div>
+					<div class="inline-Personal-info">
+						<img class="Footer_JobInfo2_IconMail" src="./images/icon-email.svg"
+							alt="email-icon">
+						<p class="Footer_JobInfo2_Mail">labidimarwen6@gmail.com</p>
+					</div>
+				</div>
 			</section>
 
 			<section class="Footer_JobInfo1">
