@@ -305,9 +305,14 @@ nav ul li:hover,.Intro_Buttom:hover,.Product_Review_Buttom:hover,.Footer_JobInfo
 input[type="email"] {
         font-size:25px;
 }
-input[type="email"]:valid:focus {
+input[type="email"]:valid {
 	border: solid 5px green;
 }
 input[type="email"]:invalid:focus {
 	border: solid 5px red;
 }
+input[type="email"]:invalid:focus+.mail_message::after { 
+        content: "Please Enter valid Mail";
+        color:red;
+}
+
